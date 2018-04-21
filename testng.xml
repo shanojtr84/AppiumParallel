@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite" verbose="50" configfailurepolicy="continue">
+
+
+	<test name="iPhone7 Plus Test">
+		<classes>
+			<class name="com.settings1.settings11"></class>
+		<class name="com.settings1.Settings12"></class> 
+		
+		</classes>
+	</test>
+</suite>
+

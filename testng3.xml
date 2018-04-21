@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite" verbose="50" parallel="tests" thread-count="2"
+	configfailurepolicy="continue">
+
+	<test name="iPhone7 Plus Test">
+		<parameter name="deviceID" value="3bc7dd8b5c22793740afe7d216afb5ba2933e394" />
+		<parameter name="WDAPort" value="7102" />
+		<parameter name="port" value="4724" />
+		<parameter name="platformVersion" value="10.3.3" />
+		
+		<classes>
+			<class name="com.settings1.settings11"></class>
+			<class name="com.settings2.settings21"></class>
+			
+		</classes>
+	</test>
+<!-- <test name="iPhone5s Test"> -->
+<!-- 		<parameter name="deviceID" value="f48afeb1bffa999c8a82d176701b19ee67865e48" /> -->
+<!-- 		<parameter name="WDAPort" value="7101" /> -->
+<!-- 		<parameter name="port" value="4727" /> -->
+<!-- 		<parameter name="platformVersion" value="11.0" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.settings2.Settings22"></class> -->
+			
+<!-- 		</classes> -->
+<!-- 	</test> -->
+<!-- 	<test name="iPhone X Simulator Test"> -->
+<!-- 		<parameter name="deviceID" value="EE94D80E-0CC2-476D-8569-612B96465CDE" /> -->
+<!-- 		<parameter name="WDAPort" value="7010" /> -->
+<!-- 		<parameter name="port" value="4735" /> -->
+<!-- 		<parameter name="platformVersion" value="11.0" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.settings3.Settings31"></class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+	
+</suite>
+

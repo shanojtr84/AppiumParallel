@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" verbose="50" name="Failed suite [Suite]">
+  <test name="iPhone7 Plus Test(failed)">
+    <classes>
+      <class name="com.settings1.Settings12">
+        <methods>
+          <include name="setupmethod"/>
+          <include name="teardownmethod"/>
+          <include name="setup"/>
+          <include name="testfirst201"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.settings1.Settings12 -->
+      <class name="com.settings1.settings11">
+        <methods>
+          <include name="setupmethod"/>
+          <include name="teardownmethod"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.settings1.settings11 -->
+    </classes>
+  </test> <!-- iPhone7 Plus Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
