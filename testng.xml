@@ -6,6 +6,9 @@
 
 
 	<test name="iPhone7 Plus Test">
+	<parameter name="deviceID" value="f48afeb1bffa999c8a82d176701b19ee67865e48" />
+		<parameter name="WDAPort" value="8102" />
+		<parameter name="Port" value="4723" />
 		<classes>
 			<class name="com.settings1.settings11"></class>
 		<class name="com.settings1.Settings12"></class> 
