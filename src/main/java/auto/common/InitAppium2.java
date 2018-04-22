@@ -236,8 +236,8 @@ public class InitAppium2 {
 			capabilities.setCapability("udid", UDID);
 			capabilities.setCapability("wdaLocalPort", WDAPortNum);
 			capabilities.setCapability("fullReset", false);
-			 capabilities.setCapability("xcodeOrgId", "UCV7WN4XD7");
-			 capabilities.setCapability("xcodeSigningId", "iPhone Developer");
+//			 capabilities.setCapability("xcodeOrgId", "UCV7WN4XD7");
+//			 capabilities.setCapability("xcodeSigningId", "iPhone Developer");
 			 capabilities.setCapability("showXcodeLog", true);
 	
 			driver = new IOSDriver(new URL("http://0.0.0.0:" + port + "/wd/hub"), capabilities);
