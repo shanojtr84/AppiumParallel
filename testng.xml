@@ -16,7 +16,7 @@
 <!-- 		</classes> -->
 <!-- 	</test> -->
 	<test name="iPhone7 Plus Test">
-		<parameter name="deviceID" value="3bc7dd8b5c22793740afe7d216afb5ba2933e394" />
+		<parameter name="deviceID" value="47fd97727a9d2ba3a2ea6462ad62818bbabf603" />
 		<parameter name="WDAPort" value="7102" />
 		<parameter name="Port" value="4723" />
 		
