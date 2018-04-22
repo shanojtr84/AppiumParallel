@@ -235,10 +235,8 @@ public class InitAppium2 {
 			capabilities.setCapability("app", "settings");
 			capabilities.setCapability("udid", UDID);
 			capabilities.setCapability("wdaLocalPort", WDAPortNum);
-			capabilities.setCapability("preventWDAAttachments", true);
-			capabilities.setCapability("clearSystemFiles", "true");
-			// capabilities.setCapability("fullReset", false);
-			// capabilities.setCapability("noReset", false);
+			capabilities.setCapability("fullReset", false);
+			 capabilities.setCapability("noReset", true);
 
 			driver = new IOSDriver(new URL("http://0.0.0.0:" + port + "/wd/hub"), capabilities);
 		}
