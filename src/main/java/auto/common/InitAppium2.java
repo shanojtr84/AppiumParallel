@@ -231,7 +231,7 @@ public class InitAppium2 {
 			capabilities.setCapability("platformName", "iOS");
 			capabilities.setCapability("deviceName", "iPhone");
 			capabilities.setCapability("automationName", "XCUITest");
-			capabilities.setCapability("platformVersion", "11.0");
+			capabilities.setCapability("platformVersion", "10.3.3");
 			capabilities.setCapability("app", "settings");
 			capabilities.setCapability("udid", UDID);
 			capabilities.setCapability("wdaLocalPort", WDAPortNum);
