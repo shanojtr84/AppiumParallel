@@ -42,7 +42,7 @@ public class InitAppium2 {
 
 		System.out.println(Thread.currentThread().getId());
 
-		//startAppiumServer(Integer.parseInt(port));
+		startAppiumServer(Integer.parseInt(port));
 		
 		driver = initializeDriver(UDID,WDAPortNum,port);
 		
