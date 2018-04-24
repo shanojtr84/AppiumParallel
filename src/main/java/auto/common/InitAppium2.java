@@ -238,7 +238,7 @@ public class InitAppium2 {
 			capabilities.setCapability("fullReset", false);
 		     capabilities.setCapability("xcodeOrgId", "UCV7WN4XD7");
 			 capabilities.setCapability("xcodeSigningId", "iPhone Developer");
-			capabilities.setCapability("keychainPath", "/Users/shanoj/Library/Keychains/MyKeychain.keychain");
+			capabilities.setCapability("keychainPath", "/Users/shanoj/Library/Keychains/MyKeychain.keychain-db");
 			capabilities.setCapability("keychainPassword", "test123");
 			 capabilities.setCapability("showXcodeLog", true);
 	
