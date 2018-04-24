@@ -239,7 +239,7 @@ public class InitAppium2 {
 		     capabilities.setCapability("xcodeOrgId", "UCV7WN4XD7");
 			 capabilities.setCapability("xcodeSigningId", "iPhone Developer");
 			capabilities.setCapability("keychainPath", "/Users/shanoj/Library/Keychains/MyKeychain.keychain-db");
-			capabilities.setCapability("keychainPassword", "vivaan123");
+			capabilities.setCapability("keychainPassword", "test@123");
 			 capabilities.setCapability("showXcodeLog", true);
 	
 			driver = new IOSDriver(new URL("http://0.0.0.0:" + port + "/wd/hub"), capabilities);
