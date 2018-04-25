@@ -20,7 +20,16 @@
 		<appium.java-client.version>6.0.0-BETA3</appium.java-client.version>
 		<com.googlecode.json-simple.version>1.1.1</com.googlecode.json-simple.version>
 	</properties>
-  
+  <repositories>
+		<repository>
+			<id>repo.jenkins-ci.org</id>
+			<url>http://repo.jenkins-ci.org/public/</url>
+		</repository>
+		     <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+	</repositories>
  <!-- list of project specific dependencies are listed below -->
  	<dependencies>
 		<dependency>
@@ -56,13 +65,14 @@
     		<artifactId>json-simple</artifactId>
     		<version>${com.googlecode.json-simple.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>org.imaginea.jenkins.plugins</groupId>
+			<artifactId>testInProgress-testng-client</artifactId>
+			<version>0.1</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
-	<repositories>
-        <repository>
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
-        </repository>
-</repositories>
+
   <!-- The below surefire plugin is used to pass parameters to TestNG suite from command line with "mvn clean test -D<parameter=value>". For ex: mvn clean test -DpVer=9.3
        The TestNG run parameter values like priority/group can be passed without declaration below like "mvn clean test -Dgroups=regression"  -->
   <build>
@@ -80,7 +90,10 @@
                      <propertyName>UDID</propertyName>
                     </systemPropertyVariables>
                     <properties>
-                  	  
+                  	  	<property>
+              				<name>listener</name>
+ 			            	<value>org.imaginea.jenkins.plugins.testinprogress.testng.TestNGProgressRunListener</value>
+            			</property>
             		</properties>
                 </configuration>
             </plugin>
