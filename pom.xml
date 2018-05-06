@@ -94,7 +94,7 @@
 <inherited>false</inherited>
 <configuration>
 <from>suncorp.automation@gmail.com</from>
-<subject>Automation Test Report For ${BUILD_NUMBER}</subject	>
+<subject>Build ${BUILD_NUMBER} - Automation Test Report</subject	>
 <failonerror>true</failonerror>
 <mailhost>smtp.gmail.com</mailhost>
 <mailport>465</mailport>
