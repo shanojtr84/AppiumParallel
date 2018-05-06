@@ -89,7 +89,7 @@
     <executions>
       <execution>
         <id>rename-file</id>
-        <phase>package</phase>
+        <phase>test</phase>
         <goals>
           <goal>rename</goal>
         </goals>
@@ -106,7 +106,7 @@
 <executions>
 <execution>
 <id>send a mail</id>
-<phase>package</phase>
+<phase>test</phase>
 <goals>
 <goal>send-mail</goal>
 </goals>
@@ -123,7 +123,7 @@
 <mailpassword>sunauto@123</mailpassword>
 <htmlMessage><![CDATA[
  <p>Hi,</p>
- <p>Please find attached iOS automation test report for Build ${BUILD_NUMBER}</p> 
+ <p>Please find attached iOS automation test report for Build ${BUILD_NUMBER}.</p> 
  ]]></htmlMessage>
 <receivers>
 <receiver>shanojtr84@gmail.com</receiver>
