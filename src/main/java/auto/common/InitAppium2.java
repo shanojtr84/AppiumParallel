@@ -201,10 +201,11 @@ public class InitAppium2 {
 
 	@AfterSuite(alwaysRun = true)
 	public  void teardown() throws IOException {
-        if(driver!=null){
-		driver.quit();
+        if(AppiumDriverManager.getAppiumDriver()!=null){
+        	AppiumDriverManager.getAppiumDriver().quit();
         }
-		stopAppiumServer();
+	//	stopAppiumServer();
+		
 	}
 
 //	@BeforeMethod(alwaysRun = true)
@@ -236,10 +237,6 @@ public class InitAppium2 {
 			capabilities.setCapability("udid", UDID);
 			capabilities.setCapability("wdaLocalPort", WDAPortNum);
 			capabilities.setCapability("fullReset", false);
-//		     capabilities.setCapability("xcodeOrgId", "UCV7WN4XD7");
-//			 capabilities.setCapability("xcodeSigningId", "iPhone Developer");
-//		 capabilities.setCapability("keychainPath", "/Users/shanoj/Library/Keychains/MyKeychain1.keychain-db");
-//		 capabilities.setCapability("keychainPassword", "vivaan123");
 			 capabilities.setCapability("showXcodeLog", true);
 	
 			driver = new IOSDriver(new URL("http://0.0.0.0:" + port + "/wd/hub"), capabilities);
