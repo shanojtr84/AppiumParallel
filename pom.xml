@@ -113,7 +113,7 @@
 <inherited>false</inherited>
 <configuration>
 <from>suncorp.automation@gmail.com</from>
-<subject>Build ${BUILD_NUMBER} - iOS Automation Test Report</subject	>
+<subject>MarketPlace iOS Automation Test Report - Build ${BUILD_NUMBER} </subject	>
 <failonerror>true</failonerror>
 <mailhost>smtp.gmail.com</mailhost>
 <mailport>465</mailport>
