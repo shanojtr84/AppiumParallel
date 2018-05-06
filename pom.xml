@@ -95,7 +95,7 @@
         </goals>
         <configuration>
           <sourceFile>${basedir}/target/surefire-reports/emailable-report.html</sourceFile>
-          <destinationFile>${basedir}/target/surefire-reports/Test-Report.html</destinationFile>
+          <destinationFile>${basedir}/target/surefire-reports/iOS-Automation-Report.html</destinationFile>
         </configuration>
       </execution>
     </executions>
@@ -113,7 +113,7 @@
 <inherited>false</inherited>
 <configuration>
 <from>suncorp.automation@gmail.com</from>
-<subject>Build ${BUILD_NUMBER} - Automation Test Report</subject	>
+<subject>Build ${BUILD_NUMBER} - iOS Automation Test Report</subject	>
 <failonerror>true</failonerror>
 <mailhost>smtp.gmail.com</mailhost>
 <mailport>465</mailport>
@@ -130,10 +130,9 @@
 </receivers>
 <fileSets>
 <fileSet>
-<!-- <directory>${basedir}/target/surefire-reports/</directory> -->
 <directory>${basedir}/target/surefire-reports/</directory>
 <includes>
-<include>Android_Automation_Report.html</include>
+<include>iOS-Automation-Report.html</include>
 </includes>
 </fileSet>
 </fileSets>
