@@ -135,7 +135,7 @@
                     <properties>
                   	  	<property>
               				<name>listener</name>
- 			           <value>auto.common.TestListner</value>
+<!--  			           <value>auto.common.TestListner</value> -->
             			</property>
             		</properties>
                 </configuration>
