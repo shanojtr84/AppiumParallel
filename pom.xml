@@ -104,7 +104,7 @@
 <mailpassword>sunauto@123</mailpassword>
 <htmlMessage><![CDATA[
  <p>Hi,</p>
- <p>Please find the latest iOS automation test report attached</p> 
+ <p>Please find attached iOS automation test report for Build ${BUILD_NUMBER}</p> 
  ]]></htmlMessage>
 <receivers>
 <receiver>shanojtr84@gmail.com</receiver>
@@ -114,6 +114,7 @@
 <!-- <directory>${basedir}/target/surefire-reports/</directory> -->
 <directory>${basedir}/target/surefire-reports/</directory>
 <includes>
+<finalName>Test Report</finalName>
 <include>emailable-report.html</include>
 </includes>
 </fileSet>
