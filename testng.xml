@@ -21,7 +21,7 @@
 		<parameter name="Port" value="4723" />
 		
 		<classes>
-			<class name="com.settings1.settings11"></class>
+<!-- 			<class name="com.settings1.settings11"></class> -->
 		<class name="com.settings1.Settings12"></class> 
 		
 		</classes>
