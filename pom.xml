@@ -94,7 +94,7 @@
 <inherited>false</inherited>
 <configuration>
 <from>suncorp.automation@gmail.com</from>
-<subject>Test Report</subject	>
+<subject>Automation Test Report</subject	>
 <failonerror>true</failonerror>
 <mailhost>smtp.gmail.com</mailhost>
 <mailport>465</mailport>
@@ -102,12 +102,16 @@
 <mailAltConfig>true</mailAltConfig>
 <mailuser>suncorp.automation@gmail.com</mailuser>
 <mailpassword>sunauto@123</mailpassword>
-<!-- <htmlMessageFile>src/main/MailContent.html</htmlMessageFile> -->
+<htmlMessage><![CDATA[
+ <p>Hi,</p>
+ <p>Please find the latest iOS automation test report attached</p> 
+ ]]></htmlMessage>
 <receivers>
 <receiver>shanojtr84@gmail.com</receiver>
 </receivers>
 <fileSets>
 <fileSet>
+<!-- <directory>${basedir}/target/surefire-reports/</directory> -->
 <directory>${basedir}/target/surefire-reports/</directory>
 <includes>
 <include>emailable-report.html</include>
